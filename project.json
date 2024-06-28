@@ -1,0 +1,15 @@
+{
+  "name": "nextjs-telegram",
+  "$schema": "./node_modules/nx/schemas/project-schema.json",
+  "tags": [],
+  "targets": {
+    "bind:webhook": {
+      "command": "curl --request POST --url https://api.telegram.org/bot${BOT_TOKEN}/setWebhook --header 'content-type: application/json' --data \"{\\\"url\\\":\\\"${BOT_WEBHOOK_URL}\\\"}\"",
+      "envFile": ".env"
+    },
+    "bind:webhook-with-secret": {
+      "command": "curl --request POST --url https://api.telegram.org/bot${BOT_TOKEN}/setWebhook --header 'content-type: application/json' --data \"{\\\"url\\\":\\\"${BOT_WEBHOOK_URL}\\\",\\\"secret_token\\\":\\\"${BOT_WEBHOOK_SECRET}\\\"}\"",
+      "envFile": ".env"
+    }
+  }
+}

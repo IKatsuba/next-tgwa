@@ -1,0 +1,8 @@
+{
+  "name": "bot",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/bot",
+  "projectType": "application",
+  "tags": [],
+  "targets": {}
+}
