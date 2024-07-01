@@ -16,7 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@nextjs-telegram/telegram": ["libs/telegram/src/index.ts"],
-      "@nextjs-telegram/telegram/server": ["libs/telegram/src/server.ts"]
+      "@nextjs-telegram/telegram/server": ["libs/telegram/src/server.ts"],
+      "@nextjs-telegram/ui": ["libs/ui/src/index.ts"],
+      "@nextjs-telegram/ui/*": ["libs/ui/src/lib/*"],
+      "@nextjs-telegram/ui/server": ["libs/ui/src/server.ts"],
+      "@nextjs-telegram/utils": ["libs/utils/src/index.ts"],
+      "@nextjs-telegram/utils/server": ["libs/utils/src/server.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
